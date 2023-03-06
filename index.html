@@ -24,7 +24,27 @@
         </p>
       </header>
       <form>
-
+        <fieldset>
+          <div class="element-field">
+            <legend>Informações do Evento.</legend>
+            <div class="input-wrapper">
+              <label for="titulo">Título do evento. *<span>(mínimo 8 caracteres)</span></label>
+              <input type="text" id="titulo" placeholder="Qual o nome do evento?">
+            </div>
+            <div class="input-wrapper">
+              <label for="link">Link do evento. *<span>(comece com https://)</span></label>
+              <input type="text" id="link" placeholder="https://meu-evento.com.br/inscricao">
+            </div>
+            <div class="input-wrapper">
+              <label for="whatsapp">WhatsApp para contato. *<span>(somente números)</span></label>
+              <input type="text" id="whatsapp" placeholder="xx123456789">
+            </div>
+            <div class="input-wrapper">
+              <label for="info">Informações extras.</label>
+              <textarea id="info" placeholder="Aqui, outras informações que julgue necessárias e não possuem um campo específico." ></textarea>
+            </div>
+          </div>
+        </fieldset>
       </form>
     </div>
   </body>
