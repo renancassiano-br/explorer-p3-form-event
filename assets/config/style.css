@@ -138,4 +138,12 @@ fieldset legend {
   display: flex;
   gap: 16px;;
 }
+
+.col-3 {
+  display: flex;
+  gap: 20px;
+}
+.col-3 > div:nth-child(1) {
+  width: 100%;
+}
 /* FIM INDIVIDUAL */
