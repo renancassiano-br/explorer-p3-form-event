@@ -37,7 +37,7 @@
             </div>
             <div class="input-wrapper">
               <label for="whatsapp">WhatsApp para contato. *<span>(somente números)</span></label>
-              <input type="text" id="whatsapp" placeholder="xx123456789">
+              <input type="number" id="whatsapp" placeholder="xx123456789">
             </div>
             <div class="input-wrapper">
               <label for="info">Informações extras.</label>
@@ -48,9 +48,43 @@
               <select name="" id="category">
                 <option value="live">Ao vivo</option>
                 <option value="podcast">Podcast</option>
-                <option value="menthorship" title="Selecione uma opção!">Mentoria</option>
+                <option value="mentorship" title="Selecione uma opção!">Mentoria</option>
               </select>
             </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="element-field">
+            <legend>Privacidade</legend>
+            <div class="input-wrapper">
+              <label for="e-mail">E-mail do administrador. *<span>(digite um email válido)</span></label>
+              <input type="email" id="e-mail" placeholder="meu@email.com.br">
+            </div>
+            <div class="input-wrapper">
+              <label for="senha">Senha de acesso para os participantes *<span>(mínimo 8 caracteres)</span></label>
+              <input type="password" id="senha" placeholder="Digite uma senha para acesso!">
+            </div>
+            <div id="privado">
+              <input type="checkbox" id="private" >
+              <label for="private">Evento privado?</label>
+            </div>  
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="element-field">
+            <legend>Dia e hora.</legend>
+            <div class="input-wrapper">
+              <label for="date">Data</span></label>
+              <input type="date" id="date">
+            </div>
+            <div class="input-wrapper">
+              <label for="begin">Das</label>
+              <input type="time" id="begin">
+            </div>
+            <div class="input-wrapper">
+              <label for="end">Até</label>
+              <input type="time" id="end" >
+            </div>  
           </div>
         </fieldset>
       </form>
