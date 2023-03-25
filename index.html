@@ -23,17 +23,24 @@
           O primeiro passo, é preencher esse formulário de inscrição.
         </p>
       </header>
-      <form>
+      <form id="my-form">
+        <!-- Agrupamento de campos -->
         <fieldset>
           <div class="element-field">
             <legend>Informações do Evento.</legend>
             <div class="input-wrapper">
               <label for="titulo">Título do evento. *<span>(mínimo 8 caracteres)</span></label>
-              <input type="text" id="titulo" placeholder="Qual o nome do evento?">
+              <input 
+                type="text" 
+                id="titulo" 
+                placeholder="Qual o nome do evento?" 
+                required 
+                minlength="8"
+              />
             </div>
             <div class="input-wrapper">
               <label for="link">Link do evento. *<span>(comece com https://)</span></label>
-              <input type="text" id="link" placeholder="https://meu-evento.com.br/inscricao">
+              <input type="url" id="link" placeholder="https://meu-evento.com.br/inscricao" required>
             </div>
             <div class="input-wrapper">
               <label for="whatsapp">WhatsApp para contato. *<span>(somente números)</span></label>
@@ -58,11 +65,16 @@
             <legend>Privacidade.</legend>
             <div class="input-wrapper">
               <label for="e-mail">E-mail do administrador. *<span>(digite um email válido)</span></label>
-              <input type="email" id="e-mail" placeholder="meu@email.com.br">
+              <input type="email" id="e-mail" placeholder="meu@email.com.br" required>
             </div>
             <div class="input-wrapper">
               <label for="senha">Senha de acesso para os participantes *<span>(mínimo 8 caracteres)</span></label>
-              <input type="password" id="senha" placeholder="Digite uma senha para acesso!">
+              <input 
+                type="password" 
+                id="senha" 
+                placeholder="Digite uma senha para acesso!"
+                minlength="8"
+              >
             </div>
             <div id="privado">
               <input type="checkbox" id="private" >
@@ -76,7 +88,7 @@
             <div class="col-3">
               <div class="input-wrapper">
                 <label for="date">Data</span></label>
-                <input type="date" id="date">
+                <input type="date" id="date" required>
               </div>
               <div class="input-wrapper">
                 <label for="begin">Das</label>
@@ -91,7 +103,17 @@
         </fieldset>
       </form>
       <footer>
-        <div class="buttons">Salvar evento</div>
+        <!-- <input 
+        class="buttons" 
+        type="submit" 
+        form="my-form" 
+        value="Salvar evento"> -->
+        <button
+          class="buttons" 
+          form="my-form">
+          Salvar evento
+        </button>
+        <!-- <div class="buttons">Salvar evento</div> -->
       </footer>
     </div>
   </body>

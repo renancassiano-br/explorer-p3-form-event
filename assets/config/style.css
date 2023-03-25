@@ -179,7 +179,7 @@ fieldset legend {
 footer {
   background: #F0F0F4;
   height: 136px;
-  padding: 40px 65px;
+  padding: 40px 64px;
   margin-bottom: 90px;
   display: flex;
   flex-direction: column;
@@ -198,9 +198,14 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 0;
 }
 
 .buttons:hover {
   background: #00b351;
+}
+
+input:invalid {
+  border: 2px solid #ff1010;
 }
 /* FIM INDIVIDUAL */
